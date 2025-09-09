@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generating layout using DIVs</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            
+            background-color: aquamarine;
+            height: 100vh;
+        }
+        .nav{
+            display: flex;
+            justify-content: center;
+        }
+        .navbar{
+            height: 80px;
+            width: 40vw;
+            margin-top: 20px;
+            background-color: rgb(152, 152, 11);
+            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+
+        .mainparent{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .laside{
+            margin-bottom: 1rem;
+            width: 20vw;
+            height: 70vh;
+            background-color: darkolivegreen;
+        }
+        .mainc{
+            margin-bottom: 1rem;
+            width: 60vw;
+            height: 70vh;
+            background-color: darkolivegreen;
+        }
+        .raside{
+            margin-bottom: 1rem;
+            width: 20vw;
+            height: 70vh;
+            background-color: darkolivegreen;
+        }
+
+        .foot{
+            display: flex;
+            justify-content: center;
+        }
+        .footer{
+            width: 90vw;
+            height: 5rem;
+            background-color: crimson;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <!-- Nav Bar -->
+        <div class="nav">
+            <div class="navbar"></div>
+        </div>
+        <!-- Main Content -->
+         <div class="mainparent">
+            <div class="laside"></div>
+            <div class="mainc"></div>
+            <div class="raside"></div>
+         </div>
+        <!-- Footer -->
+         <div class="foot">
+            <div class="footer"></div>
+         </div>
+    </div>
+</body>
+</html>
