@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Types of Selectors</title>
     <style>
+        /* Universal Selector */
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
         /* Element Selector */
         h1{
             color: brown;
@@ -17,11 +22,59 @@
         #id{
             background-color: cadetblue;
         }
+        /* Child Selectors
+        /* Div k andar ka para agar direct child h toh modify krege */
+        /*div > p{
+            background-color: rgb(216, 233, 30);
+            color: rgb(23, 141, 196);
+        } */
+
+        /* Descendent para */
+        /* Div ka descendent para m changes */
+        div p{
+            background-color: black;
+            color: aliceblue;
+        }
+
+        /* Pseudo Selectors */
+        a:visited{
+            color: rgb(205, 49, 75);
+        }
+
+        a:hover{
+            background-color: cadetblue;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        p:first-child{
+            color: forestgreen;
+        }
+
     </style>
 </head>
 <body>
     <h1>Hello</h1>
     <h1 class="class">Hey</h1>
     <h2 id="id">Heyaaa</h2>
+    <div>
+        <p>Para inside a div</p>
+    </div>
+
+    <div>
+        <article>
+            <p>Para descendent of div</p>
+        </article>
+    </div>
+
+       <a href="https://www.google.com">Go to Google</a>
+        
+       <div>
+        <p>First child</p>
+        <p>Second Child</p>
+       </div>
+    
 </body>
 </html>
