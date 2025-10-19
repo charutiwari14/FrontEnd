@@ -1,0 +1,25 @@
+    /* Yaha extrenal css likhte h:->selector { */
+        /* property:value; */
+    /* } */
+*{
+    margin: 0;
+}
+div {
+    background-color: rgb(246, 118, 14);
+}
+span {
+    border: 3px solid #f8f814;
+}
+body{
+    color: azure;
+    background-color: black;
+}
+h1{
+    
+    border: 2px solid antiquewhite;
+    border-radius: 10px;
+    text-align: center;
+}
+ol{
+    color: chartreuse;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Selectors</title>
+    <style>
+        /* Universal Selector */
+        *{
+            margin: 0;
+        }
+
+        /* Element Selector */
+        div{
+            background-color: brown;
+        }
+
+        /* Class Selector */
+        .green{
+            background-color: greenyellow;
+        }
+
+        /* Id selector  */
+        #pink{
+            background-color: pink;
+        }
+
+        /* Child Selector */
+       span > p{
+            color: #0c0cb5;
+        }
+
+        /* descendant selector */
+        span li{
+            background-color: #94acd8;
+        }
+
+        /* pseudo-Selector */
+        /* jisko visit kr liya */
+        a:visited{
+            color: #b80b0b;   
+        }
+        /* cursor-hover krne pr */
+        a:hover{
+            background-color: #e1fc18;
+        }
+        /* unvisited link */
+        a:link{
+            color: #3df6fc;
+        }
+        /* uspe click krte waqt */
+        a:active{
+            background-color: rgb(127, 123, 120);
+        }
+
+        .flip:active{
+            background-color: rgb(66, 39, 204);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        We will use internal CSS for these kind of short files.
+    </div>
+    <div class="green">
+        My name is Charu. 
+    </div>
+    <div id="pink">
+        I am a full stack developer.
+    </div>
+
+    <span>
+        <ol type="i">
+            <li>Hey</li>
+            <li>My</li>
+            <li>Name</li>
+            <li>Is</li>
+            <li>Charu</li>
+        </ol>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima itaque, tenetur sit magni accusamus nemo consequuntur facilis error consequatur sed.</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, ut.</p>
+    </span>
+
+    <a href="https://www.instagram.com">Instagram</a>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.flipkart.com" class="flip">Flipkart</a>
+</body>
+</html>

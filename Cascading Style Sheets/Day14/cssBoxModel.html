@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="cssBoxModel.css">
+</head>
+<body>
+    <h4> Margin</h4>
+    <div class="outer">
+        Padding
+        <div class="inner">Everything is a box in CSS</div>
+    </div>
+    <p>Border</p>
+
+    <br>
+    <br>
+    <!-- Margin Collapse -->
+    <div class="box1">Box1</div>
+    <!-- Box1 and box2 both have margin 40 px, hence, space between them should be 80 px but thats not how it works and margin collapse is the concept here, the higher magnitude of margin will be followed when two adjacent same type of elements are there. Occurs vertically only -->
+    <div class="box2">Box2</div>
+
+    <!-- No margin collapse -->
+    <span class="box1">Span1</span>
+    <span class="box2">Span2</span>
+</body>
+</html>
