@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade</title>
+    <style>
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+        h1{
+            color: cadetblue;
+        }
+        [data-x=a]{
+            background-color: rgb(17, 255, 255);
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+        <ol>
+            <li data-x="a">Position of order of appearence matters when selectors are of same type. In above example, cpurple is written at last,hence , it will be follow cpurple</li>
+            <li>But h1 selector is at last, of selector will be calculated and the highest Priority is of:</li>
+            <ul>
+                <li>Inline css</li>
+                <li>Id selector</li>
+                <li>Class: written at last OR Attribute Selector</li>
+                <li>Element Selector</li>
+                <li>Universal Selector</li>
+            </ul>
+            <li>Same specificity then last written:Specificity of each kind will be measured and highest specifity selector would be priortized</li>
+            <ol>
+                <li>Universal selector:0</li>
+                <li>Element Selector:1</li>
+                <li>Class/Attribute/PseudoSelector:10</li>
+                <li>Id selector:100</li>
+                <li>Inline css:1000</li>
+                <li>If important laga diya toh 10000</li> 
+            </ol>
+            <p>Add the values of specificity</p>
+            <li>'important' word ki specificity is highest</li>
+            <li>Origin of stylesheet</li>
+            <p>Avoid inline styles and important, priortize class selector</p>
+        </ol>
+    </div>
+</body>
+</html>
